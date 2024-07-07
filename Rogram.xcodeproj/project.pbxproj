@@ -11,7 +11,6 @@
 		2A0626862C39827A003B41BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626852C39827A003B41BC /* SceneDelegate.swift */; };
 		2A06268D2C39827B003B41BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268C2C39827B003B41BC /* Assets.xcassets */; };
 		2A0626902C39827B003B41BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268F2C39827B003B41BC /* Base */; };
-		2A06269B2C39827B003B41BC /* RogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06269A2C39827B003B41BC /* RogramTests.swift */; };
 		2A0626A52C39827B003B41BC /* RogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A42C39827B003B41BC /* RogramUITests.swift */; };
 		2A0626A72C39827B003B41BC /* RogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */; };
 		2A0626B62C3982FE003B41BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626B52C3982FE003B41BC /* HomeViewController.swift */; };
@@ -56,7 +55,6 @@
 		2A06268F2C39827B003B41BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A0626912C39827B003B41BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A0626962C39827B003B41BC /* RogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A06269A2C39827B003B41BC /* RogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramTests.swift; sourceTree = "<group>"; };
 		2A0626A02C39827B003B41BC /* RogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0626A42C39827B003B41BC /* RogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITests.swift; sourceTree = "<group>"; };
 		2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				2A0626D52C3A0BD1003B41BC /* Mocks */,
-				2A06269A2C39827B003B41BC /* RogramTests.swift */,
 				2A0626D32C3A0BAA003B41BC /* NetworkServiceTest.swift */,
 				2A0626DA2C3A165E003B41BC /* HomeViewModelTests.swift */,
 			);
@@ -386,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A0626D42C3A0BAA003B41BC /* NetworkServiceTest.swift in Sources */,
-				2A06269B2C39827B003B41BC /* RogramTests.swift in Sources */,
 				2A0626D92C3A151D003B41BC /* GetPhotosUseCaseMock.swift in Sources */,
 				2A0626DB2C3A165E003B41BC /* HomeViewModelTests.swift in Sources */,
 			);
