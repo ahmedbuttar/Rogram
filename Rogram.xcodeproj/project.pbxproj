@@ -129,7 +129,7 @@
 				2A06268C2C39827B003B41BC /* Assets.xcassets */,
 				2A06268E2C39827B003B41BC /* LaunchScreen.storyboard */,
 				2A0626912C39827B003B41BC /* Info.plist */,
-				2A0626CE2C39F231003B41BC /* PhotosDetailViewController */,
+				2A0626CE2C39F231003B41BC /* PhotosDetail */,
 				2A0626B42C3982D0003B41BC /* Home */,
 				2A0626B32C3982CA003B41BC /* Services */,
 			);
@@ -209,13 +209,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A0626CE2C39F231003B41BC /* PhotosDetailViewController */ = {
+		2A0626CE2C39F231003B41BC /* PhotosDetail */ = {
 			isa = PBXGroup;
 			children = (
 				2A0626CF2C39F249003B41BC /* PhotosDetailViewController.swift */,
 				2A0626D12C39F472003B41BC /* PhotoDetail.swift */,
 			);
-			path = PhotosDetailViewController;
+			path = PhotosDetail;
 			sourceTree = "<group>";
 		};
 		2A0626D52C3A0BD1003B41BC /* Mocks */ = {
