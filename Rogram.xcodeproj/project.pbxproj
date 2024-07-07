@@ -12,7 +12,6 @@
 		2A06268D2C39827B003B41BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268C2C39827B003B41BC /* Assets.xcassets */; };
 		2A0626902C39827B003B41BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268F2C39827B003B41BC /* Base */; };
 		2A0626A52C39827B003B41BC /* RogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A42C39827B003B41BC /* RogramUITests.swift */; };
-		2A0626A72C39827B003B41BC /* RogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */; };
 		2A0626B62C3982FE003B41BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626B52C3982FE003B41BC /* HomeViewController.swift */; };
 		2A0626B82C39841F003B41BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626B72C39841F003B41BC /* HomeViewModel.swift */; };
 		2A0626BC2C3984AB003B41BC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626BB2C3984AB003B41BC /* NetworkService.swift */; };
@@ -57,7 +56,6 @@
 		2A0626962C39827B003B41BC /* RogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0626A02C39827B003B41BC /* RogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0626A42C39827B003B41BC /* RogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITests.swift; sourceTree = "<group>"; };
-		2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A0626B52C3982FE003B41BC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2A0626B72C39841F003B41BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2A0626BB2C3984AB003B41BC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				2A0626A42C39827B003B41BC /* RogramUITests.swift */,
-				2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */,
 			);
 			path = RogramUITests;
 			sourceTree = "<group>";
@@ -392,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A0626A72C39827B003B41BC /* RogramUITestsLaunchTests.swift in Sources */,
 				2A0626A52C39827B003B41BC /* RogramUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

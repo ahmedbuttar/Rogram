@@ -77,6 +77,7 @@ class PhotosCell: UITableViewCell {
         photoView.sd_cancelCurrentImageLoad()
         photoView.image = nil
         isLiked = false
+        updateLikeView()
     }
     
     private func addSubviews(){
@@ -126,6 +127,10 @@ class PhotosCell: UITableViewCell {
     
     @objc func likeAction() {
         isLiked.toggle()
+        updateLikeView()
+    }
+    
+    private func updateLikeView() {
         isLiked ? likeView.setImage(UIImage(systemName: "heart.fill")?.withTintColor(.red, renderingMode: .alwaysOriginal), for: .normal) :
         likeView.setImage(UIImage(systemName: "heart")?.withTintColor(.red, renderingMode: .alwaysOriginal), for: .normal)
     }

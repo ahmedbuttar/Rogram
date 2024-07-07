@@ -34,6 +34,7 @@ class PhotosDetailViewController: UIViewController {
     
     private lazy var titleView: UILabel = {
         let label = UILabel()
+        label.accessibilityIdentifier = "photoDetailTitleView"
         label.text = photoDetail.title
         label.textColor = UIColor.black
         label.numberOfLines = 3
