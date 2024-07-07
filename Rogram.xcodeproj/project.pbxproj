@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A0626842C39827A003B41BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626832C39827A003B41BC /* AppDelegate.swift */; };
+		2A0626862C39827A003B41BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626852C39827A003B41BC /* SceneDelegate.swift */; };
+		2A06268D2C39827B003B41BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268C2C39827B003B41BC /* Assets.xcassets */; };
+		2A0626902C39827B003B41BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A06268F2C39827B003B41BC /* Base */; };
+		2A06269B2C39827B003B41BC /* RogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06269A2C39827B003B41BC /* RogramTests.swift */; };
+		2A0626A52C39827B003B41BC /* RogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A42C39827B003B41BC /* RogramUITests.swift */; };
+		2A0626A72C39827B003B41BC /* RogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */; };
+		2A0626B62C3982FE003B41BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626B52C3982FE003B41BC /* HomeViewController.swift */; };
+		2A0626B82C39841F003B41BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626B72C39841F003B41BC /* HomeViewModel.swift */; };
+		2A0626BC2C3984AB003B41BC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626BB2C3984AB003B41BC /* NetworkService.swift */; };
+		2A0626BE2C398520003B41BC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626BD2C398520003B41BC /* Response.swift */; };
+		2A0626C02C398640003B41BC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626BF2C398640003B41BC /* Photo.swift */; };
+		2A0626C22C3986B9003B41BC /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626C12C3986B9003B41BC /* PhotosListView.swift */; };
+		2A0626C42C39878A003B41BC /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626C32C39878A003B41BC /* PhotosCell.swift */; };
+		2A0626C62C398794003B41BC /* PhotosCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626C52C398794003B41BC /* PhotosCellModel.swift */; };
+		2A0626C82C3989A5003B41BC /* GetPhotosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626C72C3989A5003B41BC /* GetPhotosUseCase.swift */; };
+		2A0626CD2C39912E003B41BC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2A0626CC2C39912E003B41BC /* SDWebImage */; };
+		2A0626D02C39F249003B41BC /* PhotosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626CF2C39F249003B41BC /* PhotosDetailViewController.swift */; };
+		2A0626D22C39F472003B41BC /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626D12C39F472003B41BC /* PhotoDetail.swift */; };
+		2A0626D42C3A0BAA003B41BC /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626D32C3A0BAA003B41BC /* NetworkServiceTest.swift */; };
+		2A0626D92C3A151D003B41BC /* GetPhotosUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626D82C3A151D003B41BC /* GetPhotosUseCaseMock.swift */; };
+		2A0626DB2C3A165E003B41BC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0626DA2C3A165E003B41BC /* HomeViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A0626972C39827B003B41BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0626782C39827A003B41BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A06267F2C39827A003B41BC;
+			remoteInfo = Rogram;
+		};
+		2A0626A12C39827B003B41BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0626782C39827A003B41BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A06267F2C39827A003B41BC;
+			remoteInfo = Rogram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A0626802C39827A003B41BC /* Rogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0626832C39827A003B41BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A0626852C39827A003B41BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2A06268C2C39827B003B41BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A06268F2C39827B003B41BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A0626912C39827B003B41BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A0626962C39827B003B41BC /* RogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A06269A2C39827B003B41BC /* RogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramTests.swift; sourceTree = "<group>"; };
+		2A0626A02C39827B003B41BC /* RogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0626A42C39827B003B41BC /* RogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITests.swift; sourceTree = "<group>"; };
+		2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A0626B52C3982FE003B41BC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A0626B72C39841F003B41BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2A0626BB2C3984AB003B41BC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2A0626BD2C398520003B41BC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		2A0626BF2C398640003B41BC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		2A0626C12C3986B9003B41BC /* PhotosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
+		2A0626C32C39878A003B41BC /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		2A0626C52C398794003B41BC /* PhotosCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCellModel.swift; sourceTree = "<group>"; };
+		2A0626C72C3989A5003B41BC /* GetPhotosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotosUseCase.swift; sourceTree = "<group>"; };
+		2A0626CF2C39F249003B41BC /* PhotosDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailViewController.swift; sourceTree = "<group>"; };
+		2A0626D12C39F472003B41BC /* PhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
+		2A0626D32C3A0BAA003B41BC /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		2A0626D82C3A151D003B41BC /* GetPhotosUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotosUseCaseMock.swift; sourceTree = "<group>"; };
+		2A0626DA2C3A165E003B41BC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A06267D2C39827A003B41BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0626CD2C39912E003B41BC /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0626932C39827B003B41BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A06269D2C39827B003B41BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0626772C39827A003B41BC = {
+			isa = PBXGroup;
+			children = (
+				2A0626822C39827A003B41BC /* Rogram */,
+				2A0626992C39827B003B41BC /* RogramTests */,
+				2A0626A32C39827B003B41BC /* RogramUITests */,
+				2A0626812C39827A003B41BC /* Products */,
+				2A0626CB2C39912E003B41BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A0626812C39827A003B41BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626802C39827A003B41BC /* Rogram.app */,
+				2A0626962C39827B003B41BC /* RogramTests.xctest */,
+				2A0626A02C39827B003B41BC /* RogramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A0626822C39827A003B41BC /* Rogram */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626832C39827A003B41BC /* AppDelegate.swift */,
+				2A0626852C39827A003B41BC /* SceneDelegate.swift */,
+				2A06268C2C39827B003B41BC /* Assets.xcassets */,
+				2A06268E2C39827B003B41BC /* LaunchScreen.storyboard */,
+				2A0626912C39827B003B41BC /* Info.plist */,
+				2A0626CE2C39F231003B41BC /* PhotosDetailViewController */,
+				2A0626B42C3982D0003B41BC /* Home */,
+				2A0626B32C3982CA003B41BC /* Services */,
+			);
+			path = Rogram;
+			sourceTree = "<group>";
+		};
+		2A0626992C39827B003B41BC /* RogramTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626D52C3A0BD1003B41BC /* Mocks */,
+				2A06269A2C39827B003B41BC /* RogramTests.swift */,
+				2A0626D32C3A0BAA003B41BC /* NetworkServiceTest.swift */,
+				2A0626DA2C3A165E003B41BC /* HomeViewModelTests.swift */,
+			);
+			path = RogramTests;
+			sourceTree = "<group>";
+		};
+		2A0626A32C39827B003B41BC /* RogramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626A42C39827B003B41BC /* RogramUITests.swift */,
+				2A0626A62C39827B003B41BC /* RogramUITestsLaunchTests.swift */,
+			);
+			path = RogramUITests;
+			sourceTree = "<group>";
+		};
+		2A0626B32C3982CA003B41BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626BB2C3984AB003B41BC /* NetworkService.swift */,
+				2A0626BD2C398520003B41BC /* Response.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A0626B42C3982D0003B41BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626B52C3982FE003B41BC /* HomeViewController.swift */,
+				2A0626B72C39841F003B41BC /* HomeViewModel.swift */,
+				2A0626C92C398F1C003B41BC /* UseCases */,
+				2A0626BA2C398458003B41BC /* Models */,
+				2A0626B92C398445003B41BC /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A0626B92C398445003B41BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626C12C3986B9003B41BC /* PhotosListView.swift */,
+				2A0626C32C39878A003B41BC /* PhotosCell.swift */,
+				2A0626C52C398794003B41BC /* PhotosCellModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A0626BA2C398458003B41BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626BF2C398640003B41BC /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A0626C92C398F1C003B41BC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626C72C3989A5003B41BC /* GetPhotosUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2A0626CB2C39912E003B41BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A0626CE2C39F231003B41BC /* PhotosDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626CF2C39F249003B41BC /* PhotosDetailViewController.swift */,
+				2A0626D12C39F472003B41BC /* PhotoDetail.swift */,
+			);
+			path = PhotosDetailViewController;
+			sourceTree = "<group>";
+		};
+		2A0626D52C3A0BD1003B41BC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2A0626D82C3A151D003B41BC /* GetPhotosUseCaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A06267F2C39827A003B41BC /* Rogram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0626AA2C39827B003B41BC /* Build configuration list for PBXNativeTarget "Rogram" */;
+			buildPhases = (
+				2A06267C2C39827A003B41BC /* Sources */,
+				2A06267D2C39827A003B41BC /* Frameworks */,
+				2A06267E2C39827A003B41BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rogram;
+			packageProductDependencies = (
+				2A0626CC2C39912E003B41BC /* SDWebImage */,
+			);
+			productName = Rogram;
+			productReference = 2A0626802C39827A003B41BC /* Rogram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A0626952C39827B003B41BC /* RogramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0626AD2C39827B003B41BC /* Build configuration list for PBXNativeTarget "RogramTests" */;
+			buildPhases = (
+				2A0626922C39827B003B41BC /* Sources */,
+				2A0626932C39827B003B41BC /* Frameworks */,
+				2A0626942C39827B003B41BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A0626982C39827B003B41BC /* PBXTargetDependency */,
+			);
+			name = RogramTests;
+			productName = RogramTests;
+			productReference = 2A0626962C39827B003B41BC /* RogramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A06269F2C39827B003B41BC /* RogramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0626B02C39827B003B41BC /* Build configuration list for PBXNativeTarget "RogramUITests" */;
+			buildPhases = (
+				2A06269C2C39827B003B41BC /* Sources */,
+				2A06269D2C39827B003B41BC /* Frameworks */,
+				2A06269E2C39827B003B41BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A0626A22C39827B003B41BC /* PBXTargetDependency */,
+			);
+			name = RogramUITests;
+			productName = RogramUITests;
+			productReference = 2A0626A02C39827B003B41BC /* RogramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A0626782C39827A003B41BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2A06267F2C39827A003B41BC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2A0626952C39827B003B41BC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2A06267F2C39827A003B41BC;
+					};
+					2A06269F2C39827B003B41BC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2A06267F2C39827A003B41BC;
+					};
+				};
+			};
+			buildConfigurationList = 2A06267B2C39827A003B41BC /* Build configuration list for PBXProject "Rogram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A0626772C39827A003B41BC;
+			packageReferences = (
+				2A0626CA2C39907D003B41BC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 2A0626812C39827A003B41BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A06267F2C39827A003B41BC /* Rogram */,
+				2A0626952C39827B003B41BC /* RogramTests */,
+				2A06269F2C39827B003B41BC /* RogramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A06267E2C39827A003B41BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A06268D2C39827B003B41BC /* Assets.xcassets in Resources */,
+				2A0626902C39827B003B41BC /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0626942C39827B003B41BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A06269E2C39827B003B41BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A06267C2C39827A003B41BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0626C62C398794003B41BC /* PhotosCellModel.swift in Sources */,
+				2A0626C02C398640003B41BC /* Photo.swift in Sources */,
+				2A0626BC2C3984AB003B41BC /* NetworkService.swift in Sources */,
+				2A0626842C39827A003B41BC /* AppDelegate.swift in Sources */,
+				2A0626862C39827A003B41BC /* SceneDelegate.swift in Sources */,
+				2A0626B62C3982FE003B41BC /* HomeViewController.swift in Sources */,
+				2A0626C82C3989A5003B41BC /* GetPhotosUseCase.swift in Sources */,
+				2A0626C22C3986B9003B41BC /* PhotosListView.swift in Sources */,
+				2A0626D02C39F249003B41BC /* PhotosDetailViewController.swift in Sources */,
+				2A0626D22C39F472003B41BC /* PhotoDetail.swift in Sources */,
+				2A0626BE2C398520003B41BC /* Response.swift in Sources */,
+				2A0626B82C39841F003B41BC /* HomeViewModel.swift in Sources */,
+				2A0626C42C39878A003B41BC /* PhotosCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0626922C39827B003B41BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0626D42C3A0BAA003B41BC /* NetworkServiceTest.swift in Sources */,
+				2A06269B2C39827B003B41BC /* RogramTests.swift in Sources */,
+				2A0626D92C3A151D003B41BC /* GetPhotosUseCaseMock.swift in Sources */,
+				2A0626DB2C3A165E003B41BC /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A06269C2C39827B003B41BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0626A72C39827B003B41BC /* RogramUITestsLaunchTests.swift in Sources */,
+				2A0626A52C39827B003B41BC /* RogramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A0626982C39827B003B41BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A06267F2C39827A003B41BC /* Rogram */;
+			targetProxy = 2A0626972C39827B003B41BC /* PBXContainerItemProxy */;
+		};
+		2A0626A22C39827B003B41BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A06267F2C39827A003B41BC /* Rogram */;
+			targetProxy = 2A0626A12C39827B003B41BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A06268E2C39827B003B41BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A06268F2C39827B003B41BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A0626A82C39827B003B41BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A0626A92C39827B003B41BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A0626AB2C39827B003B41BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rogram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.Rogram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A0626AC2C39827B003B41BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rogram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.Rogram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A0626AE2C39827B003B41BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.RogramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rogram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rogram";
+			};
+			name = Debug;
+		};
+		2A0626AF2C39827B003B41BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.RogramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rogram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rogram";
+			};
+			name = Release;
+		};
+		2A0626B12C39827B003B41BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.RogramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rogram;
+			};
+			name = Debug;
+		};
+		2A0626B22C39827B003B41BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY3PLV9K55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogram.RogramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rogram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A06267B2C39827A003B41BC /* Build configuration list for PBXProject "Rogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0626A82C39827B003B41BC /* Debug */,
+				2A0626A92C39827B003B41BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0626AA2C39827B003B41BC /* Build configuration list for PBXNativeTarget "Rogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0626AB2C39827B003B41BC /* Debug */,
+				2A0626AC2C39827B003B41BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0626AD2C39827B003B41BC /* Build configuration list for PBXNativeTarget "RogramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0626AE2C39827B003B41BC /* Debug */,
+				2A0626AF2C39827B003B41BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0626B02C39827B003B41BC /* Build configuration list for PBXNativeTarget "RogramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0626B12C39827B003B41BC /* Debug */,
+				2A0626B22C39827B003B41BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A0626CA2C39907D003B41BC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A0626CC2C39912E003B41BC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A0626CA2C39907D003B41BC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2A0626782C39827A003B41BC /* Project object */;
+}
