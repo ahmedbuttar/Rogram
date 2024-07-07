@@ -46,8 +46,7 @@ private extension HomeViewController {
     func setBindings() {
         viewModel.refreshData()
             .sink{ [weak self] snapshot in
-                guard let self = self else { return }
-                self.listView.apply(snapshot)
+                self?.listView.apply(snapshot)
             }
             .store(in: &cancellables)
         

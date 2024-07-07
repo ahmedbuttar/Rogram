@@ -18,7 +18,7 @@ class PhotosDetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    private lazy var close: UIButton = {
+    private lazy var closeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Close", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -54,7 +54,7 @@ class PhotosDetailViewController: UIViewController {
     }
     
     private func addSubviews() {
-        [close, photoView, titleView].forEach {
+        [closeButton, photoView, titleView].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview($0)
         }
@@ -62,8 +62,8 @@ class PhotosDetailViewController: UIViewController {
     
     private func addConstraints() {
         NSLayoutConstraint.activate([
-            close.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            close.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            closeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             photoView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             photoView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             photoView.heightAnchor.constraint(equalTo: photoView.widthAnchor),
@@ -74,7 +74,7 @@ class PhotosDetailViewController: UIViewController {
         ])
     }
     
-    @objc func dismissAction() {
+    @objc private func dismissAction() {
         dismiss(animated: true)
     }
     

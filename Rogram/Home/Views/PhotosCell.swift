@@ -94,7 +94,7 @@ class PhotosCell: UITableViewCell {
             photoInfoStackView.addArrangedSubview($0)
         }
         
-        // Add titleStackView to container view
+        // Add titleStackView to photoInfoStackView
         photoInfoView.addSubview(photoInfoStackView)
         
         [photoView, photoInfoView].forEach {
