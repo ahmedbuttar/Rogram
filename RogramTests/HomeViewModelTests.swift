@@ -24,14 +24,16 @@ final class ShowNamesViewModelTests: XCTestCase {
     func testSnapshot() {
         let expectation = self.expectation(description: "should show photos cells")
         
-        let getPhotosUseCaseMock = GetPhotosUseCaseMock()
+        let photos: Photos = [
+            .init(id: 1, albumId: 1, title: "djdnwidjnweikdj", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!),
+            .init(id: 2, albumId: 1, title: "dwiuehdiewkdnweijd", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!),
+            .init(id: 3, albumId: 1, title: "weiuhdnweijdknewjdkn", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!)
+        ]
+        
+        let getPhotosUseCaseMock = GetPhotosUseCaseMock(with: photos)
         let viewModel = HomeViewModel(getPhotosUseCase: getPhotosUseCaseMock)
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-        
-        // just check if they are sorted
-        let expectedConnectionCellModels = generateExpectedCellModels()
+        let expectedConnectionCellModels: [PhotoCellModel] = photos.map { .init(identifier: $0.id, title: $0.title, imageUrl: $0.url)}
         
         viewModel.refreshData()
             .sink { snapshot in
@@ -44,14 +46,26 @@ final class ShowNamesViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: 5)
     }
     
-    func generateExpectedCellModels() -> [PhotosCellModel] {
+    func testGetPhoto() {
+        let expectation = self.expectation(description: "should get photo from id")
+        
         let photos: Photos = [
             .init(id: 1, albumId: 1, title: "djdnwidjnweikdj", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!),
             .init(id: 2, albumId: 1, title: "dwiuehdiewkdnweijd", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!),
             .init(id: 3, albumId: 1, title: "weiuhdnweijdknewjdkn", url: URL(string: "https://example.com")!, thumbnailUrl: URL(string: "https://example.com")!)
         ]
         
-        return photos.map { .init(identifier: $0.id, title: $0.title, imageUrl: $0.url)}
+        let getPhotosUseCaseMock = GetPhotosUseCaseMock(with: photos)
+        let viewModel = HomeViewModel(getPhotosUseCase: getPhotosUseCaseMock)
+        
+        viewModel.refreshData()
+            .sink { [weak viewModel, photos] snapshot in
+                XCTAssertEqual(viewModel?.getPhoto(with: 1), photos[0])
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        wait(for: [expectation], timeout: 5)
     }
     
 }

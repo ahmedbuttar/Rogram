@@ -9,7 +9,7 @@ import Foundation
 
 typealias Photos = [Photo]
 
-struct Photo: Codable {
+struct Photo: Codable, Equatable {
     let id: Int
     let albumId: Int
     let title: String

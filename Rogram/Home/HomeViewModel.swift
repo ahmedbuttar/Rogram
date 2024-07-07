@@ -41,7 +41,7 @@ class HomeViewModel: HomeViewModelProtocol {
                 let section = "photos"
                 snapshot.appendSections([section])
                 
-                let models = photos.map { PhotosCellModel(identifier: $0.id, title: $0.title, imageUrl: $0.thumbnailUrl) }
+                let models = photos.map { PhotoCellModel(identifier: $0.id, title: $0.title, imageUrl: $0.thumbnailUrl) }
                 snapshot.appendItems(models, toSection: section)
                 
                 return snapshot

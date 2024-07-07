@@ -1,5 +1,5 @@
 //
-//  PhotosCell.swift
+//  PhotoCell.swift
 //  Rogram
 //
 //  Created by Ahmed Buttar on 7/6/24.
@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SDWebImage
 
-class PhotosCell: UITableViewCell {
+class PhotoCell: UITableViewCell {
     
     private var isLiked: Bool = false
     
@@ -120,7 +120,7 @@ class PhotosCell: UITableViewCell {
     }
     
     
-    public func inject(model: PhotosCellModel) {
+    public func inject(model: PhotoCellModel) {
         titleView.text = model.title
         photoView.sd_setImage(with: model.imageUrl)
     }

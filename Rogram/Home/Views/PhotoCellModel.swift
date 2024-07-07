@@ -1,5 +1,5 @@
 //
-//  PhotosCellModel.swift
+//  PhotoCellModel.swift
 //  Rogram
 //
 //  Created by Ahmed Buttar on 7/6/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PhotosCellModel: Hashable {
+class PhotoCellModel: Hashable {
     
     let identifier: Int
     let title: String
@@ -25,7 +25,7 @@ class PhotosCellModel: Hashable {
         hasher.combine(identifier)
     }
     
-    static func == (lhs: PhotosCellModel, rhs: PhotosCellModel) -> Bool {
+    static func == (lhs: PhotoCellModel, rhs: PhotoCellModel) -> Bool {
         return lhs.identifier == rhs.identifier
     }
 }
