@@ -10,7 +10,7 @@ import Combine
 
 protocol HomeViewModelProtocol {
     
-    /// List of connections visible to user.
+    /// Trigger photos refresh.
     func refreshData() -> AnyPublisher<PhotosSnapshot, Never>
     
     /// Get photo from id
